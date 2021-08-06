@@ -1,5 +1,9 @@
+.navbar {
+  position: relative;
+}
+
 .navbar span.background {
-  position: absolute;
+  position: fixed;
   top: 0%;
   left: 0%;
 
@@ -7,4 +11,44 @@
   height: 86px;
 
   background: linear-gradient(269.8deg, #23005c 0%, #760166 100%);
+}
+
+.navbar a {
+  position: fixed;
+
+  font-family: Montserrat;
+  font-style: normal;
+  text-decoration: none;
+
+  color: #ffffff;
+}
+
+.navbar a.up {
+  left: 2%;
+  top: 1%;
+
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.navbar .right a {
+  top: 3%;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.navbar .right a.investors {
+  right: 20%;
+}
+
+.navbar .right a.startups {
+  right: 11%;
+}
+
+.navbar .right a.login {
+  right: 4%;
 }
