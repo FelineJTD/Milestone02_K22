@@ -1,0 +1,10 @@
+.navbar span.background {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+
+  width: 100%;
+  height: 86px;
+
+  background: linear-gradient(269.8deg, #23005c 0%, #760166 100%);
+}
