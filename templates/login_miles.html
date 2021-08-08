@@ -1,24 +1,68 @@
-{% extends 'navbar.html' %}
-{% block layout %}
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login to Uplinked</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        .mycontainer{
+            background-color: black;
+            color: rgb(255, 255, 255);
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            padding-top: 40px;
+            border-radius: 10px;
+
+            background-color:rgb(134, 40, 126);
+            background-size:cover;
+            background-position: center;
+        }
+        .wrap{
+            width: 300px;
+            margin-top: 125px;
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+        .mybtn{
+            width: 300px;
+            height: 50px;
+            border-radius: 8px;
+            background-color: rgb(134, 40, 126);
+            color: white;
+        }
+        table{
+            border-collapse: separate;
+            border-spacing: 0 15px;
+        }        
+        .inputBox{
+            width: 210px;
+            margin-left: 10px;
+            border-radius: 4px;
+        }
+    </style>
+
 </head>
 
 <body>
+    
     <div class="wrap">
         <div class="mycontainer">
-            <h1>Login Page</h1>
-            <p>Type your Email and Password</p>
+            <h1> Login Page </h1>
+            <p> Type your Email and Password </p>
         </div>
-        <p>Email    <input type="text"/></p>
-        <p>Password <input type="text"/></p>
+        
+        <table>
+            <tr>
+                <td> Email       </td> <td> <input type="text" class="inputBox" /> </td>
+            </tr>
+            <tr>
+                <td> Password    </td> <td> <input type="text" class="inputBox" /> </td>
+            </tr>
+        </table>
+
         <button class="mybtn">Login</button>
     </div>
     
 </body>
 </html>
-{% endblock layout %}

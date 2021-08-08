@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investor - Data</title>
+
+    <style>
+        table{
+            border-collapse: separate;
+            border-spacing: 0 20px;
+        }
+        .info{
+            text-align: right;
+            font-weight: bold;
+        }
+        .inputBox{
+            background-color:rgb(177, 92, 170);
+            color: white;
+
+            width: 250px;
+            height: 30px;
+            margin-left: 20px;
+            border-radius:8px;
+        }
+        .nextButton{
+            width: 60px;
+            height: 30px;    
+            position: relative;
+            top: 30px;
+            left: 400px;
+
+            color: white;
+            background-color:rgb(134, 40, 126);
+            border-radius: 8px;
+        }
+        .wrap{
+            width: 500px;
+            margin-top: 125px;
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Tell us who you are</h1>
+        <table>
+            <tr>
+                <td class="info"> Email </td>                <td> <input type="email" class="inputBox"> </td>
+            </tr>
+            <tr>
+                <td class="info"> Forename </td>             <td> <input type="text" class="inputBox"> </td>
+            </tr>
+            <tr>
+                <td class="info"> Surname </td>              <td> <input type="text" class="inputBox"> </td>
+            </tr>
+            <tr>
+                <td class="info"> Company/Organization </td> <td> <input type="text" class="inputBox"> </td>
+            </tr>
+            <tr>
+                <td class="info"> Phone number </td>         <td> <input type="text" class="inputBox"> </td>
+            </tr>
+            <tr>
+                <td class="info"> Gender </td>               <td> <input type="text" class="inputBox"> </td>
+            </tr>
+
+        </table>
+        <button class="nextButton" >Next</button>
+    </div>
+</body>
+
+</html>
