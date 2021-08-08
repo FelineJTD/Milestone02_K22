@@ -16,5 +16,9 @@ def login():
 def regis_investor():
     return render_template('regis_investor.html')
 
+@app.route("/pref_investor")
+def pref_investor():
+    return render_template('pref_investor.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
