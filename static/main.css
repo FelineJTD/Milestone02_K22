@@ -106,11 +106,10 @@
   background-position: center;
 }
 .wrap{
-  position: absolute;
-  top: 10%;
-  left: 40%;
   width: 300px;
-  margin: 10px auto;
+  margin-top: 125px;
+  margin-left: auto; 
+  margin-right: auto; 
 }
 .mybtn{
   width: 300px;
@@ -118,4 +117,13 @@
   border-radius: 8px;
   background-color: rgb(134, 40, 126);
   color: white;
+}
+table{
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}        
+.inputBox{
+  width: 210px;
+  margin-left: 10px;
+  border-radius: 4px;
 }
