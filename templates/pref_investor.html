@@ -49,9 +49,11 @@
             left: 150px; 
 
             color: white;
+            text-decoration: none;
             background-color:rgb(134, 40, 126);
             border-radius: 8px;
         }
+
         .startBtn{
             width: 60px;
             height: 30px;    
@@ -91,8 +93,8 @@
             </tr>
 
         </table>
-        <button class="backBtn">Back</button> 
-        <button class="startBtn">Start</button>
+        <a class="backBtn" href="{{url_for('regis_investor')}}">Back</a> 
+        <a class="startBtn">Start</a>
     </div>
 </body>
 {%endblock layout%}

@@ -16,8 +16,8 @@ def login():
 def regis_investor():
     return render_template('regis_investor.html')
 
-@app.route("/pref_investor")
-def pref_investor():
+@app.route("/regis_investor/preference")
+def pref():
     return render_template('pref_investor.html')
 
 if __name__ == '__main__':
