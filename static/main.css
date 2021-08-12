@@ -159,6 +159,38 @@
   border-radius: 10px;
 }
 
+.underBG h2{
+  position: absolute;
+  width: 616px;
+  height: 59px;
+  left: 89px;
+  top: 744px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #000000;
+}
+
+.underBG h3{
+  position: absolute;
+  width: 1259px;
+  height: 153px;
+  left: 89px;
+  top: 806px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #000000;
+}
+
 /*----------------------------------------login-------------------------------------------------------*/
 *{
   font-family: 'Ubuntu', sans-serif;
