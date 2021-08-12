@@ -5,8 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/home')
 def home():
-    #sementara navabr dlu ya gaess sampe homenya jadi
-    return render_template('navbar.html') 
+    return render_template('home.html') 
 
 @app.route("/login")
 def login():

@@ -1,6 +1,7 @@
 /*----------------------------------------Navbar------------------------------------------------------*/
 .navbar {
   position: relative;
+  z-index: 100;
 }
 
 .navbar span.background {
@@ -39,9 +40,9 @@
 
 .navbar .searchbar span.background {
   top: 1.5%;
-  left: 37%;
+  left: 42%;
 
-  width: 390px;
+  width: 320px;
   height: 46px;
 
   background: #ffffff;
@@ -51,9 +52,9 @@
 .navbar .searchbar input {
   position: fixed;
   top: 2.5%;
-  left: 38%;
+  left: 43%;
 
-  width: 345px;
+  width: 286px;
 
   font-family: Montserrat;
   font-style: normal;
