@@ -237,6 +237,16 @@
   border: 5px solid white;
   transform: rotate(90deg);
 }
+
+.endsquare{
+  position: absolute;
+  width: 1440px;
+  height: 291px;
+  left: 0px;
+  top: 2452px;
+
+  background: linear-gradient(229.27deg, #24005C 25.69%, #760166 72.16%);
+}
 /*----------------------------------------login-------------------------------------------------------*/
 *{
   font-family: 'Ubuntu', sans-serif;
