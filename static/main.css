@@ -88,6 +88,26 @@
 }
 
 
+/*----------------------------------------Home-------------------------------------------------------*/
+.homeBG{
+  position: absolute;
+  width: 1440px;
+  height: 682px;
+  left: 0px;
+  top: 0px;
+}
+
+.homeBG .ungu{
+  position: absolute;
+  width: 1440px;
+  height: 682px;
+  left: 0px;
+  top: 0px;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+
 /*----------------------------------------login-------------------------------------------------------*/
 *{
   font-family: 'Ubuntu', sans-serif;
