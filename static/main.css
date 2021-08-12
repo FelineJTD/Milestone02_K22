@@ -191,6 +191,32 @@
   color: #000000;
 }
 
+.rollingbox{
+  position: absolute;
+  width: 1440px;
+  height: 568px;
+  left: 0px;
+  top: 1023px;
+
+background: #760166;
+}
+
+.rollingbox h2{
+  position: absolute;
+  width: 960px;
+  height: 58px;
+  left: 89px;
+  top: 40px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #FFFFFF;
+}
+
 .bottom .reginvestor{
   position: absolute;
   width: 721px;
