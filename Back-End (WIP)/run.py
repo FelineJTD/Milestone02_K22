@@ -32,9 +32,26 @@ class InvestorRegister(Form):
 def regis_investor():
     form = InvestorRegister(request.form)
     if request.method == 'POST' and form.validate():
+        name = form.name.data
+        email = form.email.data
+        username = form.username.data
+        password = sha256_crypt.encrypt(str(form.password.data))
 
-    
+        # Create cursor
+        cur = MySQL.connection.cursor()
 
+        # Execute query
+        cur.execute("INSERT INTO users(name, email, username, password) VALUES(%s, %s, %s, %s)", (name, email, username, password))
+
+        # Commit to DB
+        MySQL.connection.commit()
+
+        # Close connection
+        cur.close()
+
+        flash('You are now registered and can log in', 'success')
+
+        return redirect(url_for('index'))
     return render_template('regis_investor.html', form=form)
 
 @app.route("/regis_investor/preference")
