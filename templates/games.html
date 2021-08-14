@@ -1,0 +1,27 @@
+{%extends 'navbar.html'%}
+{%block layout%}
+<head>
+    <title>Uplinked - Startups</title>
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+    <h1 class="logo">Startups</h1>
+    <h2 class="tags">Tags</h2>
+
+    <div class="category">
+        <button class="electronics"><a href="{{url_for('electronics')}}">Electronics</a></button>
+        <button class="food"><a href="{{url_for('foodndrinks')}}">Food & Drinks</a></button>
+        <button class="game1"><a href="{{url_for('games')}}">Game</a></button>
+        <button class="clothing"><a href="{{url_for('clothings')}}">Clothing</a></button>
+    </div>
+    <div class='isi'>
+        <div class='list'>
+            <ul>
+                <li><a href="#">Game 1</a></li>
+                <li><a href="#">Game 2</a></li>
+                <li><a href="#">Game 3</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+{%endblock layout%}

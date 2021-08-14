@@ -413,3 +413,338 @@ a{
   background-color:rgb(134, 40, 126);
   border-radius: 8px;
 }
+
+
+/*----------------------------------------Search and Filters-------------------------------------------------------*/
+
+.logo {
+  position: fixed;
+  width: 214px;
+  height: 60px;
+  left: 28px;
+  top: 93px;
+  
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 47px;
+  line-height: 57px;
+
+  
+  margin: auto;
+  
+  color: #000000;
+}
+
+.tags {
+  position: fixed;
+  width: 70px;
+  height: 40px;
+  right: 94px;
+  top: 240px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+
+  color: #000000;
+}
+
+.category {
+  float: right;
+}
+.category .electronics {
+  position: fixed;
+  cursor: pointer;
+  border: none;
+  width: 190px;
+  height: 28px;
+  right: 37px;
+  top: 306px;
+
+  background: rgba(118, 1, 102, 0.5);
+  border-radius: 5px;
+  transition: 0.4s ease;
+}
+
+.category .electronics a{
+  width: 128px;
+  height: 30px;
+  left: 1208px;
+  top: 305px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #000000;
+}
+
+.category .electronics:hover{
+  background: #760166;
+  color: #7F2CCB;
+}
+
+.category .food {
+  cursor: pointer;
+  border: none;
+  position: fixed;
+  width: 190px;
+  height: 28px;
+  right: 37px;
+  top: 346px;
+
+  background: rgba(118, 1, 102, 0.5);
+  border-radius: 5px;
+  transition: 0.4s ease;
+}
+
+.category .food a{
+  width: 164px;
+  height: 23px;
+  left: 1193px;
+  top: 346px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #000000;
+}
+
+.category .food:hover{
+  background: #760166;
+  color: #7F2CCB;
+}
+
+.category .game {
+  position: fixed;
+  border: none;
+  cursor: pointer;
+  width: 190px;
+  height: 28px;
+  right: 37px;
+  top: 386px;
+
+  background: rgba(118, 1, 102, 0.5);
+  border-radius: 5px;
+  transition: 0.4s ease;
+}
+
+.category .game a{
+  width: 70px;
+  height: 30px;
+  left: 1237px;
+  top: 385px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #000000;
+}
+
+.category .game:hover {
+  background: #760166;
+  color: #7F2CCB;
+}
+
+.category .clothing {
+  position: fixed;
+  cursor: pointer;
+  border: none;
+  width: 190px;
+  height: 28px;
+  right: 37px;
+  top: 426px;
+
+  background: rgba(118, 1, 102, 0.5);
+  border-radius: 5px;
+  transition: 0.4s ease;
+}
+
+.category .clothing a {
+  width: 99px;
+  height: 30px;
+  left: 1222px;
+  top: 425px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #000000;
+}
+
+.category .clothing:hover {
+  background: #760166;
+  color: #7F2CCB;
+}
+
+.isi {
+  margin-top: 120px;
+}
+
+.list {
+  text-align: center;
+}
+
+.list ul {
+  list-style-type: none;
+}
+
+.list ul li {
+  cursor: pointer;
+  margin: 25px;
+  width: 750px;
+  height: 90px;
+  margin-left: auto; 
+  margin-right: auto; 
+  overflow: hidden;
+  background: #996a93;
+  border-radius: 10px;
+}
+
+.list ul li a{
+  text-decoration: none;
+  text-align: center;
+  line-height: 92px;
+  
+  font-size: bold;
+  font-weight: bold;
+  font-family: Margaret;
+  
+  color: #ffffff;
+  transition: 0.4s ease;
+}
+
+.list ul li:hover {
+  background: #2e005e;
+  transition: 0.4s ease;
+}
+
+/*--------------------------------------------Tags - Clothing----------------------------------------------------------*/
+.category .electronics1 {
+  position: fixed;
+  cursor: pointer;
+  border: none;
+  width: 190px;
+  height: 28px;
+  right: 37px;
+  top: 306px;
+
+  background: #760166;
+  border-radius: 5px;
+}
+
+.category .electronics1 a{
+  width: 128px;
+  height: 30px;
+  left: 1208px;
+  top: 305px;
+  
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #ffffff;
+}
+
+.category .clothing1 {
+  position: fixed;
+  cursor: pointer;
+  border: none;
+  width: 190px;
+  height: 28px;
+  right: 37px;
+  top: 426px;
+
+  background: #760166;
+  border-radius: 5px;
+}
+
+.category .clothing1 a {
+  width: 99px;
+  height: 30px;
+  left: 1222px;
+  top: 425px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #ffffff;
+}
+
+.category .food1 {
+  cursor: pointer;
+  border: none;
+  position: fixed;
+  width: 190px;
+  height: 28px;
+  right: 37px;
+  top: 346px;
+
+  background: #760166;
+  border-radius: 5px;
+}
+
+.category .food1 a{
+  width: 164px;
+  height: 23px;
+  left: 1193px;
+  top: 346px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #ffffff;
+}
+
+.category .game1 {
+  position: fixed;
+  border: none;
+  cursor: pointer;
+  width: 190px;
+  height: 28px;
+  right: 37px;
+  top: 386px;
+
+  background: #760166;
+  border-radius: 5px;
+  transition: 0.4s ease;
+}
+
+.category .game1 a{
+  width: 70px;
+  height: 30px;
+  left: 1237px;
+  top: 385px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #ffffff;
+}

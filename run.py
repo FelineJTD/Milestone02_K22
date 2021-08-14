@@ -19,5 +19,25 @@ def regis_investor():
 def pref():
     return render_template('pref_investor.html')
 
+@app.route("/startups")
+def startups():
+    return render_template('search_filter.html', title='Startups')
+
+@app.route("/electronics")
+def electronics():
+    return render_template('electronics.html', title='Electronics')
+
+@app.route("/clothings")
+def clothings():
+    return render_template('clothings.html', title='Clothings')
+
+@app.route("/foodndrinks")
+def foodndrinks():
+    return render_template('foodndrinks.html', title='Food and Drink')
+
+@app.route("/games")
+def games():
+    return render_template('games.html', title='Games')
+
 if __name__ == '__main__':
     app.run(debug=True)
