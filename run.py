@@ -16,8 +16,16 @@ def regis_investor():
     return render_template('regis_investor.html')
 
 @app.route("/regis_investor/preference")
-def pref():
+def pref_investor():
     return render_template('pref_investor.html')
+
+@app.route("/regis_startup")
+def regis_startup():
+    return render_template('regis_startup.html')
+
+@app.route("/regis_startup/preference")
+def pref_startup():
+    return render_template('pref_startup.html')
 
 @app.route("/startups")
 def startups():
