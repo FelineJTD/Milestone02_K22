@@ -863,3 +863,320 @@ a{
 
   color: #ffffff;
 }
+
+/*--------------------------------------------Search and Filters Investors----------------------------------------------------------*/
+.category .fintech {
+  position: fixed;
+  cursor: pointer;
+  border: none;
+  width: 190px;
+  height: 28px;
+  right: 37px;
+  top: 306px;
+
+  background: rgba(118, 1, 102, 0.5);
+  border-radius: 5px;
+  transition: 0.4s ease;
+}
+
+.category .fintech a{
+  width: 128px;
+  height: 30px;
+  left: 1208px;
+  top: 305px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #000000;
+}
+
+.category .fintech:hover{
+  background: #760166;
+  color: #7F2CCB;
+}
+
+.category .education {
+  cursor: pointer;
+  border: none;
+  position: fixed;
+  width: 190px;
+  height: 28px;
+  right: 37px;
+  top: 346px;
+
+  background: rgba(118, 1, 102, 0.5);
+  border-radius: 5px;
+  transition: 0.4s ease;
+}
+
+.category .education a{
+  width: 164px;
+  height: 23px;
+  left: 1193px;
+  top: 346px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #000000;
+}
+
+.category .education:hover{
+  background: #760166;
+  color: #7F2CCB;
+}
+
+.category .service {
+  position: fixed;
+  border: none;
+  cursor: pointer;
+  width: 190px;
+  height: 28px;
+  right: 37px;
+  top: 386px;
+
+  background: rgba(118, 1, 102, 0.5);
+  border-radius: 5px;
+  transition: 0.4s ease;
+}
+
+.category .service a{
+  width: 70px;
+  height: 30px;
+  left: 1237px;
+  top: 385px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #000000;
+}
+
+.category .service:hover {
+  background: #760166;
+  color: #7F2CCB;
+}
+
+.category .agriculture {
+  position: fixed;
+  cursor: pointer;
+  border: none;
+  width: 190px;
+  height: 28px;
+  right: 37px;
+  top: 426px;
+
+  background: rgba(118, 1, 102, 0.5);
+  border-radius: 5px;
+  transition: 0.4s ease;
+}
+
+.category .agriculture a {
+  width: 99px;
+  height: 30px;
+  left: 1222px;
+  top: 425px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #000000;
+}
+
+.category .agriculture:hover {
+  background: #760166;
+  color: #7F2CCB;
+}
+
+.category .technology {
+  position: fixed;
+  cursor: pointer;
+  border: none;
+  width: 190px;
+  height: 28px;
+  right: 37px;
+  top: 466px;
+
+  background: rgba(118, 1, 102, 0.5);
+  border-radius: 5px;
+  transition: 0.4s ease;
+}
+
+.category .technology a {
+  width: 99px;
+  height: 30px;
+  left: 1222px;
+  top: 465px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #000000;
+}
+
+.category .technology:hover {
+  background: #760166;
+  color: #7F2CCB;
+}
+
+/*--------------------------------------------Tags - Investor----------------------------------------------------------*/
+.category .fintech1 {
+  position: fixed;
+  cursor: pointer;
+  border: none;
+  width: 190px;
+  height: 28px;
+  right: 37px;
+  top: 306px;
+
+  background: #760166;
+  border-radius: 5px;
+  transition: 0.4s ease;
+}
+
+.category .fintech1 a{
+  width: 128px;
+  height: 30px;
+  left: 1208px;
+  top: 305px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #ffffff;
+}
+
+.category .education1 {
+  cursor: pointer;
+  border: none;
+  position: fixed;
+  width: 190px;
+  height: 28px;
+  right: 37px;
+  top: 346px;
+
+  background: #760166;
+  border-radius: 5px;
+  transition: 0.4s ease;
+}
+
+.category .education1 a{
+  width: 164px;
+  height: 23px;
+  left: 1193px;
+  top: 346px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #ffffff;
+}
+
+.category .service1 {
+  position: fixed;
+  border: none;
+  cursor: pointer;
+  width: 190px;
+  height: 28px;
+  right: 37px;
+  top: 386px;
+
+  background: #760166;
+  border-radius: 5px;
+  transition: 0.4s ease;
+}
+
+.category .service1 a{
+  width: 70px;
+  height: 30px;
+  left: 1237px;
+  top: 385px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #ffffff;
+}
+
+.category .agriculture1 {
+  position: fixed;
+  cursor: pointer;
+  border: none;
+  width: 190px;
+  height: 28px;
+  right: 37px;
+  top: 426px;
+
+  background: #760166;
+  border-radius: 5px;
+  transition: 0.4s ease;
+}
+
+.category .agriculture1 a {
+  width: 99px;
+  height: 30px;
+  left: 1222px;
+  top: 425px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #ffffff;
+}
+
+.category .technology1 {
+  position: fixed;
+  cursor: pointer;
+  border: none;
+  width: 190px;
+  height: 28px;
+  right: 37px;
+  top: 466px;
+
+  background: #760166;
+  border-radius: 5px;
+  transition: 0.4s ease;
+}
+
+.category .technology1 a {
+  width: 99px;
+  height: 30px;
+  left: 1222px;
+  top: 465px;
+
+  font-family: Margaret;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #ffffff;
+}

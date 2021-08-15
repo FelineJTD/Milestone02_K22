@@ -1,0 +1,37 @@
+{%extends 'navbar.html'%}
+{%block layout%}
+<head>
+    <title>Uplinked - Startups</title>
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+    <h1 class="logo">Investors</h1>
+    <h2 class="tags">Tags</h2>
+
+    <div class="category">
+        <button class="fintech"><a href="{{url_for('fintech')}}">FinTech</a></button>
+        <button class="education"><a href="{{url_for('education')}}">Education</a></button>
+        <button class="service"><a href="{{url_for('service')}}">Service</a></button>
+        <button class="agriculture"><a href="{{url_for('agriculture')}}">Agriculture</a></button>
+        <button class="technology"><a href="{{url_for('technology')}}">Technology</a></button>
+    </div>
+    <div class='isi'>
+        <div class='list'>
+            <ul>    
+                <li><a href="#">FinTech 1</a></li>
+                <li><a href="#">Education 1</a></li>
+                <li><a href="#">Service 1</a></li>
+                <li><a href="#">Education 2</a></li>
+                <li><a href="#">Agriculture 2</a></li>
+                <li><a href="#">Service 3</a></li>
+                <li><a href="#">Agriculture 1</a></li>
+                <li><a href="#">Service 2</a></li>
+                <li><a href="#">Technology 1</a></li>
+                <li><a href="#">Technology 2</a></li>
+                <li><a href="#">FinTech 2</a></li>
+                <li><a href="#">FinTech 3</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+{%endblock layout%}

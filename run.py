@@ -43,7 +43,7 @@ def pref_startup():
 @app.route("/startups")
 def startups():
   #  startups = 
-    return render_template('search_filter.html', title='Startups',startup_data = startups)
+    return render_template('search_filter_startup.html', title='Startups',startup_data = startups)
 
 @app.route("/electronics")
 def electronics():
@@ -60,6 +60,30 @@ def foodndrinks():
 @app.route("/games")
 def games():
     return render_template('games.html', title='Games')
+
+@app.route("/investor")
+def investors():
+    return render_template('search_filter_investor.html')
+
+@app.route("/fintech")
+def fintech():
+    return render_template('fintech.html')
+
+@app.route("/education")
+def education():
+    return render_template('education.html')
+
+@app.route("/service")
+def service():
+    return render_template('service.html')
+
+@app.route("/agriculture")
+def agriculture():
+    return render_template('agriculture.html')
+
+@app.route("/technology")
+def technology():
+    return render_template('technology.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
