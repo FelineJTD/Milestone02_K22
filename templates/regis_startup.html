@@ -9,34 +9,69 @@
     <div class="regStart-wrap">
         <h1>Tell us who you are</h1>
         <table class="regStartable">
-            <tr>
-                <td class="info"> Email </td>                <td> <input type="email" class="inputBox-regStart"> </td>
-            </tr>
-            <tr>
-                <td class="info"> Full Name </td>            <td> <input type="text" class="inputBox-regStart"> </td>
-            </tr>
-            <tr>
-                <td class="info"> Startup Name </td>         <td> <input type="text" class="inputBox-regStart"> </td>
-            </tr>
-            <tr>
-                <td class="info"> Location </td>             <td> <input type="text" class="inputBox-regStart"> </td>
-            </tr>
-            <tr>
-                <td class="info"> Startup Category </td>     <td> <input type="text" class="inputBox-regStart"> </td>
-            </tr>
-            <tr>
-                <td class="info"> Startup Description </td>  <td> <input type="text" class="inputBox-regStart"> </td>
-            </tr>
-            <tr>
-                <td class="info"> Phone number </td>         <td> <input type="text" class="inputBox-regStart"> </td>
-            </tr>
-            <tr>
-                <td class="info"> Gender </td>               <td> <input type="text" class="inputBox-regStart"> </td>
-            </tr>
-
+            <form action="" method="post">
+                <tr>
+                    <td class="info"> Email </td>                <td> <input type="email" class="inputBox-regStart"> </td>
+                </tr>
+                <tr>
+                    <td class="info"> Full Name </td>            <td> <input type="text" class="inputBox-regStart"> </td>
+                </tr>
+                <tr>
+                    <td class="info"> Startup Name </td>         <td> <input type="text" class="inputBox-regStart"> </td>
+                </tr>
+                <tr>
+                    <td class="info"> Location </td>             <td> <input type="text" class="inputBox-regStart"> </td>
+                </tr>
+                <tr>
+                    <td class="info"> Startup Category </td>     <td> <input type="text" class="inputBox-regStart"> </td>
+                </tr>
+                <tr>
+                    <td class="info"> Startup Description </td>  <td> <input type="text" class="inputBox-regStart"> </td>
+                </tr>
+                <tr>
+                    <td class="info"> Phone number </td>         <td> <input type="text" class="inputBox-regStart"> </td>
+                </tr>
+                <tr>
+                    <td class="info"> Gender </td>               <td> <input type="text" class="inputBox-regStart"> </td>
+                </tr>
+            </form>
         </table>
-        <button class="nextButton" >
-            <a href="{{url_for('pref_startup')}}">Next</a>
-            </button>
+    </div>
+    <div class="prefInv-wrap">
+        <h1>Tell us what you want</h1>
+        <table class="prefStart-table">
+            <form action="" method="post">
+                <tr>
+                    <td class="info"> Budget/Investment Needed </td>
+                    <td> <input type="text" class="inputBox-prefStart" name = "budget_need"> </td>
+                </tr>
+                <tr>
+                    <td class="info"> Company Location </td>
+                    <td> <input type="text" class="inputBox-prefStart" name="company_location"> </td>
+                </tr>
+                <tr>
+                    <td class="info"> Return Type </td>
+                    <td> <input type="text" class="inputBox-prefStart" name="return_type_startup"> </td>
+                </tr>
+                <tr>
+                    <td class="info"> Other Type of Supports </td>
+                    <td>
+                        <label class="container">Yes
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">No
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="info"> Supports Needed </td>
+                    <td> <input type="text" class="inputBox-prefStart" name="support"> </td>
+                </tr>
+                <input type="submit" class="submitBtn">
+            </form>
+        </table>
     </div>
 {%endblock layout%}
