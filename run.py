@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, request, redirect
+from flask import Flask, render_template, url_for, request, redirect 
 app = Flask(__name__)
 
 
@@ -42,7 +42,8 @@ def pref_startup():
 
 @app.route("/startups")
 def startups():
-    return render_template('search_filter.html', title='Startups')
+  #  startups = 
+    return render_template('search_filter.html', title='Startups',startup_data = startups)
 
 @app.route("/electronics")
 def electronics():
