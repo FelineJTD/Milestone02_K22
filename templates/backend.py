@@ -46,7 +46,14 @@ class InvestorRegister(Form):
     returntype = StringField('Return Type')   
 
 class Startup(db.Model):
-    pass 
+    email = db.Column(db.String(100))
+    full_name = db.Column(db.String(100))
+    name = db.Column(db.String(100))
+    location = db.Column(db.String(100))
+    category = db.Column(db.String(100))
+    description = db.Column(db.String(200))
+    phone_number = db.Column(db.String(20))
+    gender = db.Column(db.String(10))
 
 @app.route("/regis_investor", methods=['GET', 'POST'])
 def regis_investor():
