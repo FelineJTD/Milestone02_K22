@@ -1,0 +1,47 @@
+{%extends 'navbar.html'%}
+{%block layout%}
+<head>
+    <title>Startup - Preference</title>
+    <link rel="stylesheet" href="../static/main.css">
+
+</head>
+
+    <div class="prefInv-wrap">
+        <h1>Tell us what you want</h1>
+        <table class="prefStart-table">
+            <tr>
+                <td class="info"> Budget/Investment Needed </td>            <td> <input type="text" class="inputBox-prefStart"> </td>
+            </tr>
+            <tr>
+                <td class="info"> Company Location </td>                    <td> <input type="text" class="inputBox-prefStart"> </td>
+            </tr>
+            <tr>
+                <td class="info"> Return Type </td>                         <td> <input type="text" class="inputBox-prefStart"> </td>
+            </tr>
+            <tr>
+                <td class="info"> Other Type of Supports </td>              
+                <td>
+                    <label class="container">Yes
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">No
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </td>
+                    
+            </tr>
+            <tr>
+                <td class="info"> Supports Needed </td>                     <td> <input type="text" class="inputBox-prefStart"> </td>
+            </tr>
+
+        </table>
+        <button class="backBtn">
+            <a href="{{url_for('regis_startup')}}">Back</a> 
+        </button>
+        <button class="startBtn">
+            <a>Start</a>
+        </button>
+    </div>
+{%endblock layout%}
