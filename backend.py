@@ -41,15 +41,15 @@ def regis_investor():
         email = request.form.get('email')
         forename = request.form.get('forename')
         surname = request.form.get('surname')
-        company = request.form.get('company')
-        phone = request.form.get('phone')
+        company = request.form.get('company_name')
+        phone = request.form.get('phone_number')
         gender = request.form.get('gender')
-        category = request.form.get('category')
+        category = request.form.get('category_pref')
         budget = request.form.get('budget')
         startuplocation = request.form.get('startuplocation')
-        numberofpeople = request.form.get('numberofpeople')
-        stage = request.form.get('stage')
-        returntype = request.form.get('returntype')
+        numberofpeople = request.form.get('team_amount')
+        stage = request.form.get('dev_stage')
+        returntype = request.form.get('return_type_invest')
         
         if len(email) < 4:
             flash('Please enter a valid email.', category='error')
@@ -59,7 +59,7 @@ def regis_investor():
             flash('Please enter a valid phone number.', category='error')
         else:
             # bagian database samain nama classnya dgn ini "User", ini asumsi database udh selesai
-            new_user = User(email=email, forename=forename, surname=surname, company=company, phone=phone, gender=gender, category=category, budget=budget, startuplocation=startuplocation, numberofpeople=numberofpeople, stage=stage, returntype=returntype)
+            new_user = Investor(email=email, forename=forename, surname=surname, company=company, phone=phone, gender=gender, category=category, budget=budget, startuplocation=startuplocation, numberofpeople=numberofpeople, stage=stage, returntype=returntype)
             db.session.add(new_user)
             db.session.commit()
             flash('Account created!', category='success')
@@ -67,7 +67,7 @@ def regis_investor():
             
 
         return redirect(url_for('index'))
-    return render_template('regis_investor.html', form=form)
+    return render_template('regis_investor.html')
 
 @app.route("/regis_investor/preference")
 def pref():

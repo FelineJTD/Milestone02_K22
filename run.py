@@ -19,7 +19,7 @@ def regis_investor():
         investor_data = request.form
         # bisa diliat datanya ke post di terminal
         print(investor_data)
-        return redirect(url_for("startups"))
+        return redirect(url_for("home"))
     else:
         return render_template('regis_investor.html')
 
