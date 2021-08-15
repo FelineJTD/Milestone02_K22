@@ -1,11 +1,13 @@
 {%extends 'navbar.html'%}
 {%block layout%}
     <div class="homeBG">
-        <img  src="{{ url_for('static', filename='images/BGOrangRapat.png') }}" alt="orang rapat">
+        <div class="orgrapat"></div>
         <img class="ungu" src="{{ url_for('static', filename='images/BGUngu.png') }}" alt="warna ungu">
-        <h1>Find your business match</h1>
-        <h2>Uplinked helps investors and startups find each other</h2>
-        <a href="belom ada">Start Browsing &#x23F5</a>
+        <div class="homeBG-container">
+            <h1>Find your business match</h1>
+            <h2>Uplinked helps investors and startups find each other</h2>
+            <a href="belom ada">Start Browsing &#x23F5</a>
+        </div>
     </div>
     <div class="underBG">
         <h2>How does Uplinked work?</h2>
