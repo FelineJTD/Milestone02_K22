@@ -23,3 +23,7 @@ class Startup(db.Model):
     description = db.Column(db.String(200))
     phone_number = db.Column(db.String(20))
     gender = db.Column(db.String(10))
+    budget_need = db.Column(db.Integer)
+    company_location = db.Column(db.String(100))
+    return_type_startup = db.Column(db.String(100))
+    additional_support = db.Column(db.String(100))

@@ -36,7 +36,7 @@ def login():
 
 @app.route("/regis_investor", methods=['GET', 'POST'])
 def regis_investor():
-    form = Investor(request.form)
+    #form = Investor(request.form)
     if request.method == 'POST': # Registrasi di websitenya blom diminta password
         email = request.form.get('email')
         forename = request.form.get('forename')
