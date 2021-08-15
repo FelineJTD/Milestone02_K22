@@ -1,0 +1,42 @@
+{%extends 'navbar.html'%}
+{%block layout%}
+<head>
+    <title>Startup - Data</title>
+    <link rel="stylesheet" href="../static/main.css">
+
+</head>
+
+    <div class="regStart-wrap">
+        <h1>Tell us who you are</h1>
+        <table class="regStartable">
+            <tr>
+                <td class="info"> Email </td>                <td> <input type="email" class="inputBox-regStart"> </td>
+            </tr>
+            <tr>
+                <td class="info"> Full Name </td>            <td> <input type="text" class="inputBox-regStart"> </td>
+            </tr>
+            <tr>
+                <td class="info"> Startup Name </td>         <td> <input type="text" class="inputBox-regStart"> </td>
+            </tr>
+            <tr>
+                <td class="info"> Location </td>             <td> <input type="text" class="inputBox-regStart"> </td>
+            </tr>
+            <tr>
+                <td class="info"> Startup Category </td>     <td> <input type="text" class="inputBox-regStart"> </td>
+            </tr>
+            <tr>
+                <td class="info"> Startup Description </td>  <td> <input type="text" class="inputBox-regStart"> </td>
+            </tr>
+            <tr>
+                <td class="info"> Phone number </td>         <td> <input type="text" class="inputBox-regStart"> </td>
+            </tr>
+            <tr>
+                <td class="info"> Gender </td>               <td> <input type="text" class="inputBox-regStart"> </td>
+            </tr>
+
+        </table>
+        <button class="nextButton" >
+            <a href="{{url_for('pref_startup')}}">Next</a>
+            </button>
+    </div>
+{%endblock layout%}
