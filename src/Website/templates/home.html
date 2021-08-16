@@ -1,0 +1,25 @@
+{%extends 'navbar.html'%}
+{%block layout%}
+    <div class="homeBG">
+        <div class="orgrapat"></div>
+        <img class="ungu" src="{{ url_for('static', filename='images/BGUngu.png') }}" alt="warna ungu">
+        <div class="homeBG-container">
+            <h1>Find your business match</h1>
+            <h2>Uplinked helps investors and startups find each other</h2>
+            <a href="belom ada">Start Browsing &#x23F5</a>
+        </div>
+    </div>
+    <div class="underBG">
+        <h2>How does Uplinked work?</h2>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum enim suscipit dolore nemo ipsa. Quae incidunt dolores hic voluptates in laudantium. Odio doloremque dicta accusamus porro nisi nulla placeat ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel necessitatibus amet maiores voluptate cum accusantium officia dolorem reiciendis in at repellat quaerat eos nobis, fugiat distinctio numquam dolor quia labore!</h3>
+    </div>
+    <div class="rollingbox">
+        <h2>Browse trough newly registered startups</h2>
+    </div>
+    <div class="bottom">
+        <a class="reginvestor" href="{{url_for('regis_investor')}}">Register as an <b>Investor</b></a>
+        <a class="regstartup" href="{{url_for('regis_startup')}}">Register as a <b>Startup Founder</b></a>
+        <div class="separator"></div>
+        <div class="endsquare"></div>
+    </div>
+{%endblock layout%}
