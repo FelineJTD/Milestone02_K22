@@ -1,4 +1,6 @@
-from flask import Flask, render_template, url_for, request, redirect 
+from flask import Flask, render_template, url_for, request, redirect ,flash
+from . import db
+from .models import Startup
 app = Flask(__name__)
 
 
@@ -27,19 +29,9 @@ def regis_investor():
 def pref_investor():
     return render_template('pref_investor.html')
 
-@app.route("/regis_startup", methods=["POST","GET"])
-def regis_startup():
-    if request.method == "POST":
-        startup_data = request.form
-        print(startup_data)
-        return redirect(url_for('home')) # ini diganti apa ya gatau gua
-    else:
-        return render_template('regis_startup.html')
-
 @app.route("/regis_startup/preference")
 def pref_startup():
     return render_template('pref_startup.html')
-
 @app.route("/startups")
 def startups():
   #  startups = 

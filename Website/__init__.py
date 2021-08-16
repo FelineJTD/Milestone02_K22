@@ -9,6 +9,7 @@ def create_app():
     app = Flask(__name__)
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+    app.config['SECRET_KEY'] = 'Suzy Cakep'
     db.init_app(app)
 
     @app.route('/')
@@ -79,10 +80,13 @@ def create_app():
 
             if len(email) < 4:
                 flash('Please enter a valid email.', category='error')
+                print('error')
             elif len(fullname) < 2:
                 flash('Forename must be greater than 1 character.', category='error')
+                print('error')
             elif len(phone) < 8:
                 flash('Please enter a valid phone number.', category='error')
+                print('error')
             else:
                 # bagian database samain nama classnya dgn ini "User", ini asumsi database udh selesai
                 new_Startup = Startup(email=email, full_name=fullname, name=name,location=location, category=category,
@@ -92,18 +96,14 @@ def create_app():
                                         return_type_startup=return_type, additional_support=support_need)
                 db.session.add(new_Startup)
                 db.session.commit()
+                print(new_Startup)
             return redirect(url_for('home'))  # ini diganti apa ya gatau gua
         else:
             return render_template('regis_startup.html')
-
-    @app.route("/regis_startup/preference")
-    def pref_startup():
-        return render_template('pref_startup.html')
-
     @app.route("/startups")
     def startups():
         #  startups =
-        return render_template('search_filter_startup.html', title='Startups', startup_data=startups)
+        return render_template('search_filter_startup.html', title='Startups', data=Startup.query.all())
 
     @app.route("/electronics")
     def electronics():
@@ -112,15 +112,15 @@ def create_app():
 
     @app.route("/clothings")
     def clothings():
-        return render_template('clothings.html', title='Clothings')
+        return render_template('clothings.html', title='Clothings',data=Startup.query.filter_by(category="Clothings"))
 
     @app.route("/foodndrinks")
     def foodndrinks():
-        return render_template('foodndrinks.html', title='Food and Drink')
+        return render_template('foodndrinks.html', title='Food and Drink',data=Startup.query.filter_by(category='Food and Drink'))
 
     @app.route("/games")
     def games():
-        return render_template('games.html', title='Games')
+        return render_template('games.html', title='Games',data=Startup.query.filter_by(category='Games'))
 
     # bikin database
     from .models import Startup,Investor

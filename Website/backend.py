@@ -33,7 +33,7 @@ def login():
     return render_template('login_miles.html', title='Login')
 
 
-
+"""
 @app.route("/regis_investor", methods=['GET', 'POST'])
 def regis_investor():
     #form = Investor(request.form)
@@ -63,12 +63,13 @@ def regis_investor():
             db.session.add(new_user)
             db.session.commit()
             flash('Account created!', category='success')
+            print(new_user)
             return redirect('/home')
             
 
         return redirect(url_for('index'))
     return render_template('regis_investor.html')
-
+"""
 @app.route("/regis_investor/preference")
 def pref():
     return render_template('pref_investor.html')
