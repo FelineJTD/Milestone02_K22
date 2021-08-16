@@ -90,6 +90,11 @@
 
 
 /*----------------------------------------Home-------------------------------------------------------*/
+body{
+  width: 100vw;
+  margin: 0px;
+}
+
 .homeBG{
   width: 100%;
   height: 67vh;
@@ -265,10 +270,10 @@
 }
 .bottom .reginvestor{
   position: absolute;
-  width: 721px;
-  height: 200px;
-  left: -1px;
-  top: 2252px;
+  width: 49.8vw;
+  height: 20vh;
+  left: 0px;
+  top: 130vh;
 
   font-family: Montserrat;
   font-style: normal;
@@ -283,10 +288,10 @@
 
 .bottom .regstartup{
   position: absolute;
-  width: 721px;
-  height: 200px;
-  left: 720px;
-  top: 2252px;
+  width: 49.8vw;
+  height: 20vh;
+  right: 0px;
+  top: 130vh;
 
   font-family: Montserrat;
   font-style: normal;
@@ -299,23 +304,12 @@
   background: #760166; 
 }
 
-.separator{
-  position: absolute;
-  width: 142px;
-  height: 0px;
-  left: 640px;
-  top: 2354px;
-
-  border: 5px solid white;
-  transform: rotate(90deg);
-}
 
 .endsquare{
   position: absolute;
-  width: 1440px;
-  height: 291px;
-  left: 0px;
-  top: 2452px;
+  width: 100%;
+  height: 20vh;
+  top: 150vh;
 
   background: linear-gradient(229.27deg, #24005C 25.69%, #760166 72.16%);
 }
