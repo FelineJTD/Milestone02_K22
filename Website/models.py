@@ -1,5 +1,6 @@
 from . import db
-class Investor(Form):
+
+class Investor(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(100))
     forename = db.Column(db.String(100))

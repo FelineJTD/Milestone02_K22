@@ -17,9 +17,9 @@
     <div class='isi'>
         <div class='list'>
             <ul>
-                <li><a href="#">Electronic 1</a></li>
-                <li><a href="#">Electronic 2</a></li>
-                <li><a href="#">Electronic 3</a></li>
+                {% for item in data %}
+                    <li><a href="#">{{item.name}}</a></li>
+                {% endfor%}
             </ul>
         </div>
     </div>
