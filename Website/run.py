@@ -1,6 +1,6 @@
 from flask import Flask, render_template, url_for, request, redirect ,flash
 from . import db
-from .models import Startup
+from .models import Startup,Investor
 app = Flask(__name__)
 
 
@@ -13,17 +13,41 @@ def home():
 def login():
     return render_template('login_miles.html', title='Login')
 
-@app.route("/regis_investor", methods = ["POST","GET"])
+@app.route("/regis_investor", methods=["POST", "GET"])
 def regis_investor():
-    if request.method == "POST":
-        # disini bisa input ke data base
-        # misal mau ngambil data caranya:
-        investor_data = request.form
-        # bisa diliat datanya ke post di terminal
-        print(investor_data)
-        return redirect(url_for("home"))
-    else:
-        return render_template('regis_investor.html')
+        # form = Investor(request.form)
+        if request.method == 'POST':  # Registrasi di websitenya blom diminta password
+            email = request.form.get('email')
+            forename = request.form.get('forename')
+            surname = request.form.get('surname')
+            company = request.form.get('company_name')
+            phone = request.form.get('phone_number')
+            gender = request.form.get('gender')
+            category = request.form.get('category_pref')
+            budget = request.form.get('budget')
+            startuplocation = request.form.get('startuplocation')
+            numberofpeople = request.form.get('team_amount')
+            stage = request.form.get('dev_stage')
+            returntype = request.form.get('return_type_invest')
+            print(email)
+
+            if len(email) < 4:
+                flash('Please enter a valid email.', category='error')
+            elif len(forename) < 2:
+                flash('Forename must be greater than 1 character.', category='error')
+            elif len(phone) < 8:
+                flash('Please enter a valid phone number.', category='error')
+            else:
+                # bagian database samain nama classnya dgn ini "User", ini asumsi database udh selesai
+                new_Investor = Investor(email=email, forename=forename, surname=surname, company=company, phone=phone,
+                                    gender=gender, category=category, budget=budget, startuplocation=startuplocation,
+                                    numberofpeople=numberofpeople, stage=stage, returntype=returntype)
+                db.session.add(new_Investor)
+                db.session.commit()
+                print('telah ditambahkan')
+            return redirect('/home')
+        else:
+            return render_template('regis_investor.html')
 
 @app.route("/regis_investor/preference")
 def pref_investor():
@@ -54,8 +78,8 @@ def games():
     return render_template('games.html', title='Games')
 
 @app.route("/investor")
-def investors():
-    return render_template('search_filter_investor.html')
+def investor():
+    return render_template('search_filter_investor.html',title="Investors",data=Investor.query.all())
 
 @app.route("/fintech")
 def fintech():

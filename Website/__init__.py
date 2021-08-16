@@ -52,6 +52,7 @@ def create_app():
                                     numberofpeople=numberofpeople, stage=stage, returntype=returntype)
                 db.session.add(new_Investor)
                 db.session.commit()
+                print('telah ditambahkan')
             return redirect('/home')
         else:
             return render_template('regis_investor.html')
@@ -121,7 +122,29 @@ def create_app():
     @app.route("/games")
     def games():
         return render_template('games.html', title='Games',data=Startup.query.filter_by(category='Games'))
+    @app.route("/investor")
+    def investor():
+        return render_template('search_filter_investor.html',title="Investors",data=Investor.query.all())
 
+    @app.route("/fintech")
+    def fintech():
+        return render_template('fintech.html',data=Investor.query.filter_by(category='Fintech'))
+
+    @app.route("/education")
+    def education():
+        return render_template('education.html',data=Investor.query.filter_by(category='Education'))
+
+    @app.route("/service")
+    def service():
+        return render_template('service.html',data=Investor.query.filter_by(category='Service'))
+
+    @app.route("/agriculture")
+    def agriculture():
+        return render_template('agriculture.html',data=Investor.query.filter_by(category='Agriculture'))
+
+    @app.route("/technology")
+    def technology():
+        return render_template('technology.html',data=Investor.query.filter_by(category='Technology'))
     # bikin database
     from .models import Startup,Investor
 
