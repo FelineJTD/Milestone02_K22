@@ -9,7 +9,7 @@
   top: 0%;
   left: 0%;
 
-  width: 100%;
+  width: 100vw;
   height: 86px;
 
   background: linear-gradient(269.8deg, #23005c 0%, #760166 100%);
@@ -93,6 +93,12 @@
 body{
   width: 100vw;
   margin: 0px;
+}
+
+body::-webkit-scrollbar{
+  display: none;/* Hide scrollbar for Chrome, Safari and Opera */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .homeBG{
@@ -289,6 +295,7 @@ body{
   position: relative;
   left: 2vw;
   top: 2vh;
+  width: auto;
   margin: 0%;
   font-family: Margaret;
   font-style: normal;
@@ -301,11 +308,11 @@ body{
 
 .commentbox{
   position: relative;
-  width: 94vw;
+  width: 96vw;
   height: 50vh;
-  left: 2vw;
   top: 2.5vh;
   background-color: rgba(118, 1, 102, 0.5);
+  margin-left: 2vw;
 
   text-align: center;
   line-height: 50vh;
@@ -316,7 +323,7 @@ body{
   width: 49.8vw;
   height: 20vh;
   left: 0px;
-  top: 230vh;
+  top: 231vh;
 
   font-family: Montserrat;
   font-style: normal;
@@ -334,7 +341,7 @@ body{
   width: 49.8vw;
   height: 20vh;
   right: 0px;
-  top: 230vh;
+  top: 231vh;
 
   font-family: Montserrat;
   font-style: normal;
